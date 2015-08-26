@@ -21,7 +21,7 @@ public void setup()
 }
 public void draw()
 {
-	capeHood();
+	
 	head();
 	face();
 
@@ -33,27 +33,33 @@ public void head()
 {
 	fill(255);
 	noStroke();
-	rect(100,200,300,200);
+	rect(100,y,300,y);
 	strokeWeight(6);
-  	stroke(200);
- 	bezier(100,200,150,150,350,150,400,200);
- 	bezier(100,200,50,250,50,350,100,400);
- 	bezier(100,400,150,450,350,450,400,400);
- 	bezier(400,200,450,250,450,350,400,400);
+  	stroke(199,187,175);
+ 	bezier(100,y,150,y-50,350,y-50,400,200);
+ 	bezier(100,y,50,y+50,50,y+150,100,y+200);
+ 	bezier(100,y+200,150,y+250,350,y+250,400,y+200);
+ 	bezier(400,y,450,y+50,450,y+150,400,y+200);
  }
 
  //this will be the face//
 public void face()
 {
  	
- 	fill(0);
- 	ellipse(160, 300, 40, 50);
- 	ellipse(340, 300, 40, 50);
+ 	fill(209,221,222);
+ 	ellipse(160, y+90, 40, 50);
+ 	ellipse(340, y+90, 40, 50);
+ 	noFill();
+ 	bezier(180, 350, 197.5f, 375, 232.5f, 375, 250, 350);
+ 	bezier(250, 350, 267.5f, 375, 302.5f, 375, 320, 350);
+
 }
 
-public void capeHood()
+int y =200;
+
+public void mousePressed ()
 {
-	ellipse(300,200,300,200);
+
 }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "OriginalDesign" };
