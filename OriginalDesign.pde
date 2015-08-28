@@ -26,15 +26,16 @@ void draw()
 			}
 
 		}
+		background(252,202,252);
+	head();
+	face();
+
 	}
 
 
 
-	background(252,202,252);
-	head();
-	face();
+	
 
-}
 
 
 

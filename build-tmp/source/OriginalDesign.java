@@ -38,21 +38,20 @@ public void draw()
 
 		while(y<200){
 
-			if(y<200){
-
 				y=y+1;
 			}
 
 		}
+		background(252,202,252);
+	head();
+	face();
+
 	}
 
 
 
-	background(252,202,252);
-	head();
-	face();
+	
 
-}
 
 
 
